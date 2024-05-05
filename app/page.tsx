@@ -1,12 +1,15 @@
 "use client";
 
 import Live from "@/components/Live";
-import { CollaborativeApp } from "./CollaborativeApp";
+import NavBar from "@/components/NavBar";
 
 export default function Page() {
   return (
-    <div className="">
-      <Live />
-    </div>
+    <main className="h-screen overflow-hidden">
+      <NavBar />
+      <section className="flex h-full flex-row">
+        <Live />
+      </section>
+    </main>
   );
 }
